@@ -1,7 +1,10 @@
 package _04_JavaClassSearchAndSort;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,7 +22,7 @@ class _02_JavaClassSearchSortTest {
         assertTrue(Arrays.equals(sorted, _02_JavaClassSearchSort.arraySort(unsorted)));
     }
 
-    @Test
+    @Test 
     void testListSort() {
         Double[] unsorted = { 4.0, 3.0, 5.0, 0.0, 1.0, 2.0 };
         Double[] sorted = { 0.0, 1.0, 2.0, 3.0, 4.0, 5.0 };
